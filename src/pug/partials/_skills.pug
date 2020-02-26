@@ -1,0 +1,18 @@
+section.skills
+    h2 Skills
+    .row.skills-container.d-flex.justify-content-center
+        .col-lg-3
+            h3.skill-title.font-weight-light Languages
+            ul.skills-list
+                each val in ['JavaScript(ES6)', 'HTML5', 'CSS3', 'Ruby']
+                    li.skills-list-item= val
+        .col-lg-3
+            h3.skill-title.font-weight-light Frameworks
+            ul.skills-list
+                each val in ['React', 'Ruby on Rails', 'JQuery', 'Bootstrap', 'PUG', 'SASS/LESS', 'JEST', 'RSPEC', 'Capybara']
+                    li.skills-list-item= val
+        .col-lg-3
+            h3.skill-title.font-weight-light Concepts
+            ul.skills-list
+                each val in ['Data Structures', 'Git', 'Test Driven Development', 'Pair Programming', 'OOP/OOD', 'MVC', 'API Development']
+                    li.skills-list-item= val

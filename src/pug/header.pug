@@ -1,0 +1,24 @@
+header.col-12
+    nav.navbar.navbar-expand-sm.navbar-light
+        a.navbar-brand(href='#') Mark Baidebura | 
+            b Fullstack web developer
+        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+
+        .collapse.navbar-collapse(id='navbarSupportedContent')
+            ul.navbar-nav.float-right.ml-auto
+                li.nav-item
+                    a.nav-link(href='#skills') Skills
+                li.nav-item
+                    a.nav-link(href='#projects') Projects
+                li.nav-item.contact
+                    a.nav-link(href='contact') Contact
+    .about.d-flex.align-items-center.flex-column
+        .avatar
+            img.rounded-circleimg(src=require("./avatar.jpg").default)
+        p.name.font-weight-light.mt-4.font-size-5.h3 Mark Baidebura
+        p.position.font-weight-bold.h3.mt-3 Fullstack Web Developer
+        include partials/_socials.pug
+        .down-arrow.mt-5
+            a(href="http://")
+                i.fas.fa-angle-down.h1

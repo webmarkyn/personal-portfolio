@@ -1,0 +1,13 @@
+.socials {
+  a {
+    color: $main-font;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      color: $secondary;
+    }
+  }
+  svg {
+    margin: 0 10px;
+  }
+}

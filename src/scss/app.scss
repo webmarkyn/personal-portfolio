@@ -1,0 +1,13 @@
+@import "~bootstrap/scss/bootstrap";
+@import "variables.scss";
+@import "header.scss";
+@import "partials/socials.scss";
+@import "main.scss";
+
+body {
+    background: $main-color;
+    font-family: Helvetica;
+    color: $main-font;
+}
+
+

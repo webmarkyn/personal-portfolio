@@ -1,0 +1,27 @@
+.projects {
+    .project {
+        position: relative;
+        height: 170px;
+        border-radius: 20px;
+        overflow: hidden;
+        
+        &-cover {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(#2193B0, #6DD5ED);
+            color: #fff;
+
+            a {
+                color: #fff;
+                transition: .2s ease;
+
+                &:hover {
+                    color: $main-color;
+                }
+            }
+        }
+    }
+}

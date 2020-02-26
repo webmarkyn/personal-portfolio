@@ -1,0 +1,37 @@
+.projects {
+
+    .project {
+        position: relative;
+        height: 170px;
+        border-radius: 20px;
+        overflow: hidden;
+        
+        &:hover {
+            .project-cover {
+                opacity: 1;
+            }
+        }
+        
+        &-cover {
+            border-radius: 20px;
+            opacity: 0;
+            transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(#5ee7df, #b490ca);
+            color: #fff;
+
+            a {
+                color: #fff;
+                transition: .2s ease;
+
+                &:hover {
+                    color: $main-font;
+                }
+            }
+        }
+    }
+}

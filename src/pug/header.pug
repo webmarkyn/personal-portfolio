@@ -1,0 +1,23 @@
+header.col-12
+    nav.navbar.fixed-top.navbar-light.navbar-expand
+        .container
+            a.navbar-brand.d-none.d-md-block(href='#') Mark Baidebura | 
+                b Fullstack web developer
+
+            .navbar-collapse.collapse
+                ul.navbar-nav.float-right.mr-md-0.ml-auto.mr-auto.list-inline
+                    li.nav-item
+                        a.nav-link(href='#skills') Skills
+                    li.nav-item
+                        a.nav-link(href='#projects') Projects
+                    li.nav-item.contact
+                        a.nav-link(href='#contact') Contact
+    .about.d-flex.align-items-center.flex-column
+        .avatar
+            img.rounded-circleimg(src=require("../assets/avatar.jpg").default)
+        p.name.font-weight-light.mt-4.font-size-5.h3 Mark Baidebura
+        p.position.font-weight-bold.h3.mt-3.text-center Fullstack Web Developer
+        include partials/_socials.pug
+        .down-arrow.mt-5
+            a(href="#skills")
+                i.fas.fa-angle-down.h1

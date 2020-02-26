@@ -1,0 +1,17 @@
+section.contact {
+    .contact-title {
+        font-weight: bold;
+        color: $secondary;
+        letter-spacing: 3px;
+    }
+
+    a {
+        color: $main-font;
+        text-decoration: underline;
+        text-decoration-color: $secondary;
+    }
+
+    .socials {
+        display: block !important;
+    }
+}

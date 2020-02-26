@@ -1,0 +1,46 @@
+.navbar {
+  background: $main-color;
+}
+.navbar-nav .contact {
+  border: 1px solid $secondary;
+  border-radius: 20px;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    background: $secondary;
+
+    & a.nav-link {
+      color: $main-color;
+    }
+  }
+}
+
+.about {
+  padding-top: 40px;
+
+  .avatar {
+    width: 118px;
+    height: 118px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid $secondary;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .down-arrow {
+    a {
+      color: $secondary;
+      transition: 0.2s ease-in-out;
+      position: relative;
+      top: 0;
+
+      &:hover {
+        top: 3px;
+      }
+    }
+  }
+}

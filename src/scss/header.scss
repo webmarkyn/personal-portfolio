@@ -6,8 +6,9 @@ header {
 }
 
 .navbar {
-  background: rgba(255, 255, 255, 0.2);
+  background: $main-color;
 }
+
 .navbar-nav .contact {
   border: 1px solid $secondary;
   border-radius: 20px;

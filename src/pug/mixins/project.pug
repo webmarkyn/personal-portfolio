@@ -1,9 +1,13 @@
-mixin project(name, image, technologies, link)
+mixin project(name, image, technologies, link, live_link)
     .col-lg-4.mb-4.col-md-4.col-sm-6
         .project
             img(src=image, alt="project screenshot").w-100.h-100
             .project-cover.d-flex.flex-column.justify-content-center.align-items-center
-                p.project-name.font-weight-bold= name
-                p.project-technologies= technologies
-                a(href=link).project-link
-                    i.fab.fa-github.h3
+                a(href=link).text-center
+                    p.project-name.font-weight-bold= name
+                    p.project-technologies= technologies
+                .project-links.d-flex.align-items-center
+                    a(href=link).project-link.mx-2
+                        i.fab.fa-github.h3
+                    if live_link
+                        a(href=live_link).project-link.text-uppercase.mx-2.pb-1 Live

@@ -1,6 +1,14 @@
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .navbar {
   background: $main-color;
 }
+
 .navbar-nav .contact {
   border: 1px solid $secondary;
   border-radius: 20px;
@@ -16,11 +24,11 @@
 }
 
 .about {
-  padding-top: 40px;
+  font-family: "Quicksand", sans-serif;
 
   .avatar {
-    width: 118px;
-    height: 118px;
+    width: 200px;
+    height: 200px;
     overflow: hidden;
     border-radius: 50%;
     border: 2px solid $secondary;
@@ -29,6 +37,11 @@
       width: 100%;
       height: 100%;
     }
+  }
+
+  .position {
+    text-decoration: underline;
+    text-decoration-color: $secondary;
   }
 
   .down-arrow {

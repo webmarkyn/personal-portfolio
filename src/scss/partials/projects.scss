@@ -12,6 +12,10 @@
                 opacity: 1;
             }
         }
+
+        img {
+            object-fit: contain;
+        }
         
         &-cover {
             border-radius: 20px;

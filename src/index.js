@@ -69,7 +69,7 @@ const scrollUp = (index) => {
 const enableScrollEvent = () => {
   let time = Date.now();
   window.addEventListener('wheel', (e) => {
-    if (window.innerWidth <= 1366) return
+    if (window.innerWidth <= 1366) return;
     e.preventDefault();
     if ((time + 1000 - Date.now()) < 0) {
       const index = heroes.indexOf(currentHero);

@@ -1,4 +1,4 @@
-header.col-12
+header#header.col-12
     nav.navbar.fixed-top.navbar-light.navbar-expand
         .container
             .navbar-collapse.collapse
@@ -12,9 +12,9 @@ header.col-12
     .about.d-flex.align-items-center.flex-column
         .avatar
             img.rounded-circleimg(src=require("../assets/avatar.jpg").default)
-        p.name.font-weight-medium.mt-4.h1 Mark Baidebura
+        p.name.font-weight-medium.mt-4.h1.text-center Mark Baidebura
         p.position.font-weight-bold.h1.mt-3.text-center Fullstack Web Developer
         include partials/_socials.pug
-        .down-arrow.mt-5
-            a(href="#skills")
+        .down-arrow
+            a(href="#projects")
                 i.fas.fa-angle-down.h1

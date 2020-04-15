@@ -1,4 +1,7 @@
 footer {
-  position: absolute;
-  bottom: 10px;
+  margin-top: 25px;
+  @media (min-width: 1366px) {
+    position: absolute;
+    bottom: 10px;
+  }
 }

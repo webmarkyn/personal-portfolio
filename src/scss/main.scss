@@ -13,4 +13,8 @@
   flex-direction: column;
   justify-content: center;
   height: 100vh;
+  @media (max-width: 1366px) {
+    height: auto;
+  }
 }
+

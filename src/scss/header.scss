@@ -3,6 +3,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+
+  @include media-breakpoint-down(md) {
+    padding-top: 2vh;
+  }
 }
 
 .navbar {
@@ -25,7 +30,7 @@ header {
 }
 
 .about {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Oswald", sans-serif;
 
   .avatar {
     width: 200px;
@@ -33,6 +38,14 @@ header {
     overflow: hidden;
     border-radius: 50%;
     border: 2px solid $secondary;
+    margin-top: -200px;
+
+    @include media-breakpoint-down(md) {
+      position: relative;
+      margin-top: -35vw;
+      width: 35vw;
+      height: auto;
+    }
 
     img {
       width: 100%;
@@ -40,17 +53,29 @@ header {
     }
   }
 
+  .name {
+    @include media-breakpoint-up(xl) {
+      font-size: 4rem;
+    }
+  }
+
   .position {
     text-decoration: underline;
     text-decoration-color: $secondary;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 5.2rem;
+    }
   }
 
   .down-arrow {
+    position: absolute;
+    bottom: 10vh;
     a {
       color: $secondary;
       transition: 0.2s ease-in-out;
       position: relative;
-      top: 0;
 
       &:hover {
         top: 3px;

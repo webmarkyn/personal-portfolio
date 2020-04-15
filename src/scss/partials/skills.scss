@@ -1,4 +1,7 @@
 .skills {
+    @include media-breakpoint-up(xl) {
+        font-size: 22px;
+    }
     .skills-container {
         text-align: center;
 

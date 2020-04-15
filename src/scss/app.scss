@@ -6,14 +6,9 @@
 @import "footer.scss";
 
 body {
-    padding-top: 50px;
+    padding-top: 58px;
     background: $main-color;
     font-family: Helvetica;
     color: $main-font;
-    overflow: -moz-scrollbars-none;
-    -ms-overflow-style: none;
 }
-
-body::-webkit-scrollbar { width: 0 !important }
-
 

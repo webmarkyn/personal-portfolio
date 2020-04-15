@@ -3,12 +3,17 @@
 @import "header.scss";
 @import "partials/socials.scss";
 @import "main.scss";
+@import "footer.scss";
 
 body {
     padding-top: 50px;
     background: $main-color;
     font-family: Helvetica;
     color: $main-font;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
 }
+
+body::-webkit-scrollbar { width: 0 !important }
 
 

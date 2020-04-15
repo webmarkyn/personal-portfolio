@@ -13,6 +13,7 @@ header {
   border: 1px solid $secondary;
   border-radius: 20px;
   transition: 0.2s ease-in-out;
+  margin-left: 10px;
 
   &:hover {
     background: $secondary;

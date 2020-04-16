@@ -7,7 +7,7 @@ import './scss/app.scss';
 const SmoothScroll = require('smooth-scroll');
 const navLinks = [...document.querySelectorAll('a[href*="#"]')];
 const scroll = new SmoothScroll();
-const header = document.getElementById('header');
+const body = document.body;
 const heroes = [...document.querySelectorAll('.hero')];
 let currentHero = null;
 
@@ -59,7 +59,7 @@ const scrollUp = (index) => {
   if (index <= 0) {
     currentHero = null;
     disableAllLinks(navLinks);
-    scroll.animateScroll(header, null, {speed: 500});
+    scroll.animateScroll(body, null, {speed: 500});
     return;
   }
   scroll.animateScroll(heroes[index-1], null, {speed: 500});
@@ -71,7 +71,7 @@ const enableScrollEvent = () => {
   window.addEventListener('wheel', (e) => {
     if (window.innerWidth <= 1366) return;
     e.preventDefault();
-    if ((time + 1000 - Date.now()) < 0) {
+    if ((time + 1200 - Date.now()) < 0) {
       const index = heroes.indexOf(currentHero);
       if (Math.sign(e.deltaY) < 0) scrollUp(index);
       else scrollDown(index);

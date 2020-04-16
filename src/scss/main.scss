@@ -6,6 +6,10 @@
   color: $secondary;
   text-align: center;
   font-weight: bold;
+
+  @media (min-width: 1366px) {
+    font-size: 4.5rem;
+  }
 }
 
 .hero {
@@ -15,6 +19,7 @@
   height: 100vh;
   @media (max-width: 1366px) {
     height: auto;
+    margin-bottom: 50px;
   }
 }
 

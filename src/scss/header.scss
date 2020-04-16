@@ -1,9 +1,13 @@
 header {
-  height: 100vh;
+  height: calc(100vh - 58px);
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+
+  @media (max-height: 567px) {
+    align-items: flex-start;
+  }
 
   @include media-breakpoint-down(md) {
     padding-top: 2vh;
@@ -40,11 +44,15 @@ header {
     border: 2px solid $secondary;
     margin-top: -200px;
 
+    @media (max-height: 567px) {
+      display: none;
+    }
+
     @include media-breakpoint-down(md) {
       position: relative;
       margin-top: -35vw;
       width: 35vw;
-      height: auto;
+      height: 35vw;
     }
 
     img {
@@ -72,6 +80,10 @@ header {
   .down-arrow {
     position: absolute;
     bottom: 10vh;
+
+    @media (max-height: 320px){
+      bottom: -5px;
+    }
     a {
       color: $secondary;
       transition: 0.2s ease-in-out;

@@ -7,8 +7,9 @@ section.contact {
     }
 
     p.h3 {
+        font-size: 1.4rem;
         @include media-breakpoint-up(xl) {
-            font-size: 2.5rem;
+            font-size: 2.0rem;
         }
     }
 
@@ -18,7 +19,7 @@ section.contact {
         text-decoration-color: $secondary;
 
         @include media-breakpoint-up(xl) {
-            font-size: 3rem;
+            font-size: 2.3rem;
         }
     }
 

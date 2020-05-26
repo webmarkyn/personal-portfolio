@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-This is my personal portfolio 💼 (Built with HTML5, CSS3, ES6, Bootsrap, Webpack)
+This is my personal Web-developer portfolio 💼 (Built with HTML5, CSS3, ES6, Bootsrap, Webpack)
 
 ## Live Demo
 
